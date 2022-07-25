@@ -8,7 +8,7 @@ html = urllib.request.urlopen(url)
 soup = BeautifulSoup(html, 'html.parser')
 
 #HTMLから表の部分を全て取得する．(該当箇所:tableタグ)
-table = soup.find_all('table')[0]
+table = soup.find_all('table')[1]
 
 #上記作成tableから行データを取得する．（該当箇所：trタグ）
 rows = table.find_all('tr')
