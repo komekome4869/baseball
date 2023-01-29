@@ -1,4 +1,5 @@
-from data import date_data_download, stamen_data_download
+import date_data_download
+import gen_data.stamen_data_download as stamen_data_download
 import twitter
 import datetime
 import pandas as pd
