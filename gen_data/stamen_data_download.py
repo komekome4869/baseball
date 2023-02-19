@@ -91,7 +91,7 @@ def match_result(config):
     df = pd.merge(stamen_df, result_df, on="日付")
 
     #csvファイルに出力
-    df.to_csv('../data/stamen/StamenData{}.csv'.format(year), sep=',', header=True, index = False)
+    df.to_csv('../data/stamen/StamenData_{}.csv'.format(year), sep=',', header=True, index = False)
 
 
 
